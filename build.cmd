@@ -1,0 +1,1 @@
+java -agentlib:native-image-agent=config-output-dir=src/main/resources/META-INF/native-image -jar target/btcsolomining.jar -ph 127.0.0.1 -p 10808 -t 4
