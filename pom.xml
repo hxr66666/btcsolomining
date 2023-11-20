@@ -35,7 +35,7 @@
       <artifactId>picocli</artifactId>
       <version>${picocli.version}</version>
     </dependency>
-    <!-- 支持在 Windows 上运行的 GraalVM 本机图像应用程序中使用 ANSI 转义码，实现彩色输出 -->
+
     <dependency>
       <groupId>info.picocli</groupId>
       <artifactId>picocli-jansi-graalvm</artifactId>
@@ -46,11 +46,6 @@
       <artifactId>hutool-core</artifactId>
       <version>5.8.22</version>
     </dependency>
-<!--    <dependency>
-      <groupId>cn.hutool</groupId>
-      <artifactId>hutool-socket</artifactId>
-      <version>5.8.22</version>
-    </dependency>-->
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-socks</artifactId>

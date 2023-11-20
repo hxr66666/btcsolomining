@@ -68,10 +68,11 @@ public class BitcoinMiner extends Thread {
 			final BigInteger diff = new BigInteger("00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", 16);
 
 			log("当前高度" + (workOn + 1));
-			int startIndexTmp = startIndex;
+			int startIndexTmp = startIndex + stepScope;
+			int endIndex = startIndex + stepScope;
 			long startTime = System.currentTimeMillis();
 			long work = 0;
-			while (startIndexTmp <= startIndexTmp + stepScope) {
+			while (startIndexTmp <= endIndex) {
 				if (shoutDownFlag.get()) {
 					break;
 				}
